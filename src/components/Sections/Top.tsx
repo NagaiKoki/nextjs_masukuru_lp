@@ -6,7 +6,7 @@ import { COLORS } from '../../contants/Styles'
 
 const ContentMain = () => {
   return (
-    <div className="Content_Main_Wrapper">
+    <section className="Content_Main_Wrapper">
       <div className="Content__Title__Wrapper">
         <h1 className="Content__Title">
           仲間とトレーニング
@@ -37,7 +37,7 @@ const ContentMain = () => {
             font-size: 16px;
           }
       `}</style>
-    </div>
+    </section>
   )
 }
 

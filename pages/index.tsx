@@ -3,8 +3,10 @@ import Image from 'next/image'
 // import components
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
-import ContentMain from '../src/components/Content/Main'
-import StoreBatch from '../src/components/common/Store'
+import ContentMain from '../src/components/Sections/Top'
+import ContentComment from '../src/components/Sections/Comment'
+import ContentCGraph from '../src/components/Sections/Graph'
+import ContentForm from '../src/components/Sections/Form'
 // import constants
 import { COLORS } from '../src/contants/Styles'
 
@@ -14,6 +16,9 @@ const Index: React.FC = () => {
       <div className="Content__Wrapper">
         <Header />
         <ContentMain />
+        <ContentComment />
+        <ContentCGraph />
+        <ContentForm />
         <Footer />
       </div>
       <style jsx>{`
