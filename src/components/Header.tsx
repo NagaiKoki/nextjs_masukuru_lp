@@ -5,7 +5,7 @@ const Header: React.FC = () => {
   return (
     <header>
       <div className="ImageWrapper">
-        <Image src="/masukuru_name.png" width={280} height={50} />
+        <Image src="/masukuru_name.png" width={200} height={50} />
       </div>
 
       <style jsx>{`
