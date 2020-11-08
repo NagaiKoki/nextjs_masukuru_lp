@@ -1,13 +1,19 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Header: React.FC = () => {
   return (
     <header>
-      <h1>hoge</h1>
-      
+      <div className="ImageWrapper">
+        <Image src="/masukuru_name.png" width={280} height={50} />
+      </div>
+
       <style jsx>{`
         header {
-          background: red;
+          padding: 20px;
+        }
+        .ImageWrapper {
+          margin-left: 10px;
         }
       `}
       </style>

@@ -5,6 +5,7 @@ body {
 
 h1, h2, h3, h4, p {
   margin: 0;
+  font-family: Circular, Helvetica, Arial, sans-serif, IosFix;
 }
 
 ul {
