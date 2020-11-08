@@ -3,28 +3,17 @@ import Image from 'next/image'
 // import components
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
+import ContentMain from '../src/components/Content/Main'
 import StoreBatch from '../src/components/common/Store'
 // import constants
 import { COLORS } from '../src/contants/Styles'
-import { STORE_URL } from '../src/contants/url'
 
 const Index: React.FC = () => {
   return (
     <div className="Container">
       <div className="Content__Wrapper">
         <Header />
-        <div className="Content_Main_Wrapper">
-          <div className="Content__Title__Wrapper">
-            <h1 className="Content__Title">
-              仲間とトレーニング
-              <br/>
-              仲間と理想のカラダへ
-            </h1>
-            <p className="Content__Describe">マスクルは友達や恋人とトレーニングを共有できるアプリです</p>
-            <StoreBatch />
-          </div>
-          <Image src="/masukuru_screenshot.png" height={500} width={500} />
-        </div>
+        <ContentMain />
         <Footer />
       </div>
       <style jsx>{`
