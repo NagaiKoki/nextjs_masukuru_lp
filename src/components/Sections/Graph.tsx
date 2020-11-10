@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+// import context
+import { AppContext } from '../../../pages/_app'
 import Image from 'next/image'
 import { COLORS } from '../../contants/Styles'
 
 const ContentGraph = () => {
+  const isMobile = useContext(AppContext)
+
   return (
     <section className="Content__Section__Wrapper">
       <div className="Content__Section__Title__Wrapper">
@@ -19,12 +23,14 @@ const ContentGraph = () => {
         .Content__Section__Wrapper {
           display: flex;
           justify-content: space-around;
-          margin-top: 200px;
-          padding: 0 100px;
+          flex-wrap: ${isMobile ? 'wrap-reverse' : 'wrap'};
+          margin-top: ${isMobile ? '100px' : '200px'};
+          padding: ${isMobile ? '0 10px' : '0 100px'};
         }
         .Content__Section__Title__Wrapper {
-          width: 500px;
-          margin-left: 50px;
+          width: ${isMobile ? '100%' : '500px'};
+          margin-left: ${isMobile ? '0' : '50px'};
+          margin-top: ${isMobile && '30px'};
         }
         .Content__Section__Title {
           color: ${COLORS.BASE_BLACK};

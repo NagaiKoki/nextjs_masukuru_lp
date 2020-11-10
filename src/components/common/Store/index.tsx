@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
+// import context
+import { AppContext } from '../../../../pages/_app'
 import Image from 'next/image'
 // import constants
 import { URL } from '../../../contants/url'
@@ -10,6 +12,7 @@ type Props = {
 
 const StoreBatch = (props: Props) => {
   const { width, height } = props
+  const isMobile = useContext(AppContext)
 
   return (
     <div className="Content__Store__button">
@@ -23,6 +26,7 @@ const StoreBatch = (props: Props) => {
         .Content__Store__button {
           display: flex;
           align-items: center;
+          padding: ${isMobile && '0 10px'}
         }
         .Content_Apple__Button {
 

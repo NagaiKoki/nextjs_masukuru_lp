@@ -1,5 +1,8 @@
+import { useContext } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+// import context
+import { AppContext } from '../pages/_app'
 // import components
 import Header from '../src/components/Header'
 import Footer from '../src/components/Footer'
@@ -11,6 +14,8 @@ import ContentForm from '../src/components/Sections/Form'
 import { COLORS } from '../src/contants/Styles'
 
 const Index: React.FC = () => {
+  const isMobile = useContext(AppContext)
+  
   return (
     <div className="Container">
       <div className="Content__Wrapper">
@@ -29,6 +34,7 @@ const Index: React.FC = () => {
           position: absolute;
           background-repeat: no-repeat;
           background-position: right top;
+          background-size: ${isMobile ? '100%' : '70%' };
           background-image: url('/masukuru_background.png');
           width: 100%;
           overflow: hidden;
