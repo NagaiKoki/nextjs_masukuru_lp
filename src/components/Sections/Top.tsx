@@ -8,7 +8,7 @@ import { COLORS } from '../../contants/Styles'
 
 const ContentMain = () => {
   const isMobile = useContext(AppContext)
-  
+
   return (
     <section className="Content_Main_Wrapper">
       <div className="Content__Title__Wrapper">
@@ -32,7 +32,7 @@ const ContentMain = () => {
 
           }
           .Content__Title {
-            padding: ${isMobile ? `0 10px 40px 10px` : `0 150px 40px 0`};
+            padding: ${isMobile ? `0 15px 40px 15px` : `0 150px 40px 0`};
             color: ${COLORS.BASE_BLACK};
             font-size: 40px;
           }

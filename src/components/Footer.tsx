@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+// import context
+import { AppContext } from '../../pages/_app'
 import { COLORS } from '../contants/Styles'
 // import components
 import StoreBatch from '../components/common/Store'
 import { URL } from '../contants/url'
 
 const Footer: React.FC = () => {
+  const isMobile = useContext(AppContext)
+
   return (
     <footer>
       <div className="Footer__Upper">
@@ -33,13 +37,14 @@ const Footer: React.FC = () => {
           padding: 50px;
         }
         .Footer__Upper {
-          display: flex;
+          display: ${!isMobile && 'flex'};
           align-items: center;
         }
         .Footer__Logo__Wrapper {
           display: flex;
           align-items: center;
           margin-right: 100px;
+          margin-bottom: ${isMobile && '20px'}
         }
         .Footer__Logo__Icon {
           border-radius: 60px;
