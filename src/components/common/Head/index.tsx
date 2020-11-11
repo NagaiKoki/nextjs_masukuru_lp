@@ -29,6 +29,19 @@ const HtmlHead = (props: Props) => {
       <meta name="twitter:image" content={image} />
       <link rel="canonical" href={url} />
       <link rel="shortcut icon" href="/logo.png" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-30K392XMJ3"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-30K392XMJ3', {
+          page_path: window.location.pathname,
+        });
+      `,
+        }}
+      />
     </Head>
   )
 }
