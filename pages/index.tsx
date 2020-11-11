@@ -21,8 +21,8 @@ const Index: React.FC = () => {
         title="マスクル"
         description="友達や恋人とトレーニングや筋トレを共有できるアプリです。"
         keyword="筋トレ,トレーニング,友達,恋人,リモート,遠距離,アプリ"
-        image="https://firebasestorage.googleapis.com/v0/b/musclew-47ec1.appspot.com/o/logo.png?alt=media&token=5cc01ba3-1fc4-4dd4-b157-7ed5e896c02c"
-        url="http:localhost:3000"
+        image="https://firebasestorage.googleapis.com/v0/b/musclew-47ec1.appspot.com/o/masukuru_og.png?alt=media&token=777de944-cee8-4c62-a4d7-15acf0212914"
+        url="https://masukuru.com"
       />
       <div className="Container">
         <div className="Content__Wrapper">
